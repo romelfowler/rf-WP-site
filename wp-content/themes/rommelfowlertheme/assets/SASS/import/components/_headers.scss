@@ -1,0 +1,49 @@
+/** ==============
+Navigation ul
+===================== */
+
+nav.back-link {
+  list-style: none; }
+
+.btn {
+  border: none;
+  background: none;
+	&:focus {
+	  outline: none; }
+}
+
+.menu-btn {
+  font-size: 1em;
+  margin: 0 0 0 7em;
+  padding: 0;
+  color: #585656; }
+
+.menu-btn .menu-icon-alt,
+.menu-btn.mode-code .menu-icon {
+  display: none; }
+
+.menu-btn.mode-code .menu-icon-alt {
+  display: block; }
+
+  ul {
+
+    .sub-menu {
+      padding: 0 1.1em 0;
+    }
+  }
+  .menu-link {
+    figcaption {
+    font-size: 12px;
+    position: relative;
+    top: -80px;
+    text-align: center;
+    left: -40px;
+    display: inline;
+    transition:  .5s ease-in-out;
+    }
+  }
+  a.item-down:hover {
+    figcaption{
+    opacity: 0
+    }
+  }

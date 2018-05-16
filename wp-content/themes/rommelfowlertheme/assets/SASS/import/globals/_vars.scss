@@ -1,0 +1,28 @@
+//_vars.scss
+// FONTS
+$monospace : monospace, serif;
+$rf_font_header : 'Raleway', monospace, sans-serif;
+$rf_font_text : 'Open Sans', sans-serif;
+// COLORS
+$ultra-white : #fff;
+$black-opacity: rgba(0,0,0,0.64);
+$rf_color_default : #232323;
+$rf_color_gray :#322e2e;
+$rf_color_green : #6dcc9e;
+$rf_color_red:#e04643;
+$rf_color_red_1: #a73331;
+$rf_color_white: whitesmoke;
+// MEDIA QUERIES BREAK POINTS
+$break-small: 600px;
+$break-large: 1000px;
+// MIXINS
+@mixin transitions($variable) {
+  -webkit-transition: $variable;
+     -moz-transition: $variable;
+      -ms-transition: $variable;
+          transition: $variable;
+}
+// EXTENDS
+%full-width {
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+/* ==================================
+Font-Awesome
+=================================== */
+
+.fa {
+  opacity: 0.3;
+  @include transitions(.3s ease-in);
+
+  &:hover {
+    opacity: 1;
+  }
+}

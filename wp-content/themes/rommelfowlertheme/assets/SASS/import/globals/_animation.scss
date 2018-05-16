@@ -1,0 +1,30 @@
+/* ==================================
+Animation
+=================================== */
+.layoutChange {
+	--color-text: #000;
+	--color-bg: #f1f1f1;
+	--color-link: #000;
+	--color-link-hover: #74c3d0;
+	--color-stitle: #000;
+	--fontsize-stitle: 8vw;
+	--color-nav: #74c3d0;
+	--color-nav-hover: #000;
+}
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+@keyframes animLoader {
+  0% {
+    content: '- - - - - -'; }
+  25% {
+    content: 'F - - - - -'; }
+  50% {
+    content: 'F O - - - -'; }
+  75% {
+    content: 'F O W - - -'; }
+  100% {
+    content: 'F O W L E R '; } }

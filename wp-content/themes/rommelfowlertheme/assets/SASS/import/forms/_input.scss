@@ -1,0 +1,110 @@
+input, label, textarea {
+  font-family: $rf_font_text;
+  font-weight: 700;
+  margin: 1em auto; }
+
+input[type="name"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: #908e8e; }
+
+input[type="submit"] {
+  background: $rf_color_green;
+  color: white;
+  border: none;
+  padding: 1em;
+  width: 20%;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+	&:hover { background: $rf_color_red; }
+}
+
+form {
+  overflow-y: scroll;
+  width: 100%;
+  height: auto;
+  text-align: left;
+	span {
+    font-size: 12px;
+    display: block;
+    color: $rf_color_green;
+    line-height: 1.3em;
+    margin: 10px auto;
+	}
+  &.form{
+    margin: 5% auto;
+  }
+ }
+
+#contact {
+  form a {
+      float: right;
+      font-size: 25px;
+  }
+}
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+.js {
+	.loading {
+	  position: fixed;
+	  z-index: 100;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: $rf_color_default;
+	  transition: opacity 0.3s;
+  }
+	.loading-hidden {
+	  pointer-events: none;
+	  opacity: 0;
+  }
+	.loading::after {
+	  content: '- - -';
+	  font-family: $rf_font_header;
+	  font-size: 1.5em;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	  height: 100%;
+	  animation: animLoader 1s infinite alternate forwards; }
+}
+.data-content {
+  a.x {
+    display: none;
+  }
+  a.show {
+    display: block !important;
+    float:right;
+
+  }
+ .inner-data-content {
+   @media screen and (max-width: $break-large) {
+    width: 100%;
+
+    a.x {
+      display: block;
+    }
+  }
+ }
+}
+.scroller {
+
+  @media screen and (max-width: $break-large) {
+  padding: 2%;
+  }
+}

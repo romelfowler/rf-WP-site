@@ -1,0 +1,91 @@
+//_globals.scss
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+code, kbd, pre, samp {
+  font-family: $monospace;
+  font-size: 1em;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none; }
+
+body {
+  position: relative;
+  overflow-y: hidden;
+  font-family: $rf_font_header;
+  color: #585656;
+  background: $rf_color_default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto; }
+  .container-flex {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $rf_font_header; }
+  q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+  }
+p {
+  font-family: $rf_font_text;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: 1px; }
+  p span {
+    font-size: 12px; }
+
+hr {
+  display: block;
+  margin-top: 1.5em;
+  /* margin-bottom: 0.5em; */
+  margin-left: 0.5em;
+  /* margin-right: auto; */
+  border-style: inset;
+  border-width: 1px;
+  border-color: rgb(13, 97, 101);
+}
+
+.clear {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  line-height: 1.3em;
+  color: $rf_color_green;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+
+	&:hover { color: $rf_color_red; }
+	&:focus { outline: none; }
+	&:active { color: $rf_color_green; }
+}
+ul {
+  line-height: 1.3em;
+  font-family: $rf_font_text;
+  font-size: 14px;
+}
